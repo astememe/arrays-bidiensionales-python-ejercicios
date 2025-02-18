@@ -7,9 +7,10 @@ salir = True
 fila = 0
 while fila < 20 and salir:
     columna = 0
-    matriz.append([])
-    #exponente = randint(1, 1000)
     exponente = int(input("Introduzca exponente: "))
+    if exponente != -1000:
+        matriz.append([])
+    #exponente = randint(1, 1000)
     while columna < 2 and salir:
         if exponente != -1000 and columna == 0:
             matriz[fila].append(exponente)
